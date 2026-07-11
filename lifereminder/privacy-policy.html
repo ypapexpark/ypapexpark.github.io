@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보 처리방침 — Life Reminder</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #09090e;
+    color: #e8e8e8;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 60px 28px 100px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 48px; }
+  .brand-icon {
+    width: 44px; height: 44px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .brand-name { font-size: 18px; font-weight: 700; letter-spacing: 0.05em; color: #fff; }
+  .brand-sub { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+  h1 { font-size: 1.5rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+  .updated { font-size: 0.82rem; color: rgba(255,255,255,0.3); margin-bottom: 36px; }
+  h2 { font-size: 0.95rem; font-weight: 700; color: #fff; margin: 32px 0 10px; letter-spacing: 0.03em; }
+  p, li { font-size: 0.92rem; color: rgba(255,255,255,0.6); line-height: 1.75; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 4px; }
+  .divider { border: none; border-top: 1px solid rgba(255,255,255,0.07); margin: 52px 0; }
+  .en-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; color: rgba(255,255,255,0.25); text-transform: uppercase; margin-bottom: 20px; }
+  a { color: rgba(255,255,255,0.45); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <div class="brand-icon">🔁</div>
+    <div>
+      <div class="brand-name">LIFE REMINDER</div>
+      <div class="brand-sub">Everything has a cycle.</div>
+    </div>
+  </div>
+
+  <!-- 한국어 -->
+  <h1>개인정보 처리방침</h1>
+  <p class="updated">최종 업데이트: 2026-07-11</p>
+
+  <p><strong style="color:#fff">Life Reminder</strong>는 회원가입·로그인이 없고, 사용자를 식별하는 어떠한 정보도 수집하지 않습니다.</p>
+
+  <h2>기기에 로컬로 저장되는 정보</h2>
+  <ul>
+    <li>등록한 물건의 사진(썸네일), 이름, 등록 일시, 메모, 교체 주기</li>
+    <li>알림 시간대, 알림 단계별 on/off 등 설정값</li>
+  </ul>
+  <p style="margin-top:10px">위 정보는 기기 내부 저장소(AsyncStorage)에만 저장되며, 사용자 계정이나 클라우드 동기화 없이 오직 이 기기에서만 관리됩니다. 앱을 삭제하면 모두 삭제됩니다.</p>
+
+  <h2>외부로 전송되는 정보</h2>
+  <ul>
+    <li><strong style="color:#fff">물건 자동 인식 시</strong> — 카메라로 찍거나 갤러리에서 선택한 사진이, 앱 서버(Supabase Edge Function)를 거쳐 <strong style="color:#fff">Google Cloud Vision API</strong>로 전송되어 사진 속 물건의 라벨을 인식하는 데에만 사용됩니다. 사진은 인식 처리 목적으로만 사용되며 서버에 저장되지 않고 즉시 폐기됩니다.</li>
+    <li><strong style="color:#fff">내장 목록에 없는 물건일 경우</strong> — 사진이 아닌 인식된 텍스트 라벨만 <strong style="color:#fff">Groq API</strong>로 전송되어 교체 주기와 설명 문구를 생성하는 데 사용됩니다.</li>
+    <li><strong style="color:#fff">피드백 전송 시에만</strong> — 설정 → 피드백에서 사용자가 직접 작성하고 전송을 누른 내용(과 앱 버전)만 개발자에게 전달됩니다.</li>
+  </ul>
+  <p style="margin-top:10px">위 세 가지 경우를 제외하고는 어떠한 정보도 외부로 전송되지 않으며, 등록한 물건 목록 자체가 서버에 저장되거나 다른 목적으로 활용되는 일은 없습니다.</p>
+
+  <h2>권한 사용</h2>
+  <ul>
+    <li><strong style="color:#fff">카메라 / 사진 보관함</strong> — 물건 사진을 촬영하거나 선택하기 위해서만 사용합니다.</li>
+    <li><strong style="color:#fff">알림(Notification)</strong> — 설정한 시간에 교체 시기를 알려주기 위해서만 사용하며, 기기 내에서 예약·처리됩니다.</li>
+  </ul>
+
+  <h2>제3자 서비스</h2>
+  <p>광고, 분석(analytics), 크래시 리포팅 SDK를 포함하지 않으며 사용자 행동을 추적하지 않습니다. 위에 명시한 Google Cloud Vision, Groq(물건 인식·문구 생성), 피드백 전달을 위한 서버 통신만 존재합니다.</p>
+
+  <h2>문의</h2>
+  <p>개인정보 처리방침에 대한 문의는 앱 내 설정 → 피드백을 통해 연락해주세요.</p>
+
+  <hr class="divider">
+
+  <!-- English -->
+  <p class="en-label">English</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 2026-07-11</p>
+
+  <p><strong style="color:#fff">Life Reminder</strong> has no sign-up or login, and does not collect any information that identifies you.</p>
+
+  <h2>Information Stored Locally on Your Device</h2>
+  <ul>
+    <li>Photos (thumbnails), names, registration dates, notes, and replacement cycles of the items you register</li>
+    <li>Settings such as notification time and which reminder stages are enabled</li>
+  </ul>
+  <p style="margin-top:10px">This data is stored only in on-device storage (AsyncStorage), with no account or cloud sync — it is managed on this device alone. Deleting the app removes this data.</p>
+
+  <h2>Information Sent Externally</h2>
+  <ul>
+    <li><strong style="color:#fff">When recognizing an item</strong> — a photo you take or pick is sent, via our server (a Supabase Edge Function), to the <strong style="color:#fff">Google Cloud Vision API</strong> solely to detect labels in the photo. The photo is used only for this recognition and is not stored server-side; it is discarded immediately after processing.</li>
+    <li><strong style="color:#fff">For items not in our built-in list</strong> — only the recognized text labels (not the photo itself) are sent to the <strong style="color:#fff">Groq API</strong> to generate a suggested replacement cycle and description.</li>
+    <li><strong style="color:#fff">Only when you send feedback</strong> — the message you write in Settings → Feedback (and your app version) is delivered to the developer.</li>
+  </ul>
+  <p style="margin-top:10px">Outside of these three cases, no information is sent anywhere, and your registered item list itself is never stored on a server or used for any other purpose.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong style="color:#fff">Camera / Photo Library</strong> — used only to take or select a photo of an item.</li>
+    <li><strong style="color:#fff">Notifications</strong> — used only to remind you when it's time to replace an item; scheduled and handled entirely on-device.</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <p>This app includes no advertising, analytics, or crash-reporting SDKs, and does not track user behavior. The only network calls are the Google Cloud Vision and Groq calls described above (for item recognition) and the feedback delivery.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about this policy, reach out via Settings → Feedback in the app.</p>
+
+</div>
+</body>
+</html>
