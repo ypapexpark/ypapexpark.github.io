@@ -16,10 +16,11 @@
   .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 48px; }
   .brand-icon {
     width: 44px; height: 44px;
-    background: #fff;
+    background: #1B2A4A;
     border-radius: 12px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 22px;
+    font-size: 22px; color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
   }
   .brand-name { font-size: 18px; font-weight: 700; letter-spacing: 0.05em; color: #fff; }
   .brand-sub { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 2px; }
@@ -31,80 +32,89 @@
   li { margin-bottom: 4px; }
   .divider { border: none; border-top: 1px solid rgba(255,255,255,0.07); margin: 52px 0; }
   .en-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; color: rgba(255,255,255,0.25); text-transform: uppercase; margin-bottom: 20px; }
-  a { color: rgba(255,255,255,0.45); }
+  a { color: #c9b37a; text-decoration: none; }
+  a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <div class="brand">
-    <div class="brand-icon">🔖</div>
+    <div class="brand-icon">“</div>
     <div>
-      <div class="brand-name">HARU</div>
-      <div class="brand-sub">One line. Every day.</div>
+      <div class="brand-name">하루 · HARU</div>
+      <div class="brand-sub">One elegant line, every day.</div>
     </div>
   </div>
 
   <!-- 한국어 -->
   <h1>개인정보 처리방침</h1>
-  <p class="updated">최종 업데이트: 2026-07-01</p>
+  <p class="updated">최종 업데이트: 2026-08-05</p>
 
-  <p><strong style="color:#fff">하루 한 문장(Haru)</strong>은 사용자의 개인정보를 수집하지 않습니다.</p>
+  <p><strong style="color:#fff">하루 한 문장(Haru)</strong>은 사용자의 개인정보를 수집하지 않는 것을 원칙으로 합니다.</p>
 
   <h2>수집하는 정보</h2>
-  <p>없습니다. 이 앱은 외부 서버와 통신하지 않으며, 회원가입·로그인 절차가 없고, 어떠한 개인 식별 정보도 외부로 전송하지 않습니다.</p>
+  <p>없습니다. 이 앱은 서버와 통신하지 않으며, 회원가입·로그인 절차가 없고, 어떠한 개인 식별 정보도 외부로 전송하지 않습니다.</p>
 
   <h2>기기에 로컬로 저장되는 정보</h2>
   <ul>
     <li>즐겨찾기(저장)한 문구 목록</li>
     <li>알림 시간, 빈도, 콘텐츠 카테고리 등 앱 설정값</li>
     <li>온보딩 완료 여부</li>
+    <li>홈 화면 위젯에 표시할 오늘의 문구 (App Group, 기기 내부 공유만)</li>
   </ul>
-  <p style="margin-top:10px">위 정보는 사용자의 기기 안에만 저장되며, 외부로 전송되지 않습니다. 앱을 삭제하면 모두 삭제됩니다.</p>
+  <p style="margin-top:10px">위 정보는 모두 사용자의 기기 안에만 저장되며, 외부 서버로 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.</p>
 
   <h2>권한 사용</h2>
   <ul>
-    <li><strong style="color:#fff">알림(Notification)</strong> — 설정한 시간에 문구 알림을 보내기 위해서만 사용합니다.</li>
-    <li><strong style="color:#fff">홈 화면 위젯</strong> — 오늘의 문구를 홈 화면에 표시하기 위해서만 사용하며, 기기 내에서만 갱신됩니다.</li>
+    <li><strong style="color:#fff">알림(Notification)</strong> — 설정한 시간에 문구 알림을 보내기 위해서만 사용합니다. (로컬 알림, 원격 푸시 아님)</li>
+    <li><strong style="color:#fff">홈 화면 위젯</strong> — 오늘의 문구를 홈 화면에 표시하기 위해서만 사용하며, 위젯 데이터는 기기 내에서만 갱신됩니다.</li>
   </ul>
+  <p style="margin-top:10px">카메라, 사진, 위치, 마이크, 추적(ATT) 권한은 요청하지 않습니다.</p>
 
   <h2>제3자 서비스</h2>
-  <p>분석(analytics), 광고, 크래시 리포팅 등 어떠한 제3자 SDK도 포함하지 않습니다. 광고가 없으며, 사용자 행동을 추적하지 않습니다.</p>
+  <p>이 앱은 분석(analytics), 광고, 크래시 리포팅 등 어떠한 제3자 SDK도 포함하지 않습니다. 광고가 없으며, 사용자 행동을 추적하지 않습니다.</p>
 
   <h2>문의</h2>
-  <p>개인정보 처리방침에 대한 문의는 앱 내 설정 → 피드백을 통해 연락해주세요.</p>
+  <p>개인정보 처리방침에 대해 문의사항이 있으시면
+    <a href="mailto:ypapex@gmail.com">ypapex@gmail.com</a>으로 연락해주세요.
+  </p>
 
   <hr class="divider">
 
   <!-- English -->
   <p class="en-label">English</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 2026-07-01</p>
+  <p class="updated">Last updated: 2026-08-05</p>
 
-  <p><strong style="color:#fff">Haru (Daily Quote)</strong> does not collect any personal information.</p>
+  <p><strong style="color:#fff">Haru (Daily Quote)</strong> is built to collect no personal information.</p>
 
   <h2>Information We Collect</h2>
-  <p>None. This app does not communicate with any external server, has no sign-up or login, and never transmits personally identifiable information.</p>
+  <p>None. This app does not communicate with any server, has no sign-up or login, and never transmits personally identifiable information.</p>
 
   <h2>Information Stored Locally on Your Device</h2>
   <ul>
     <li>Your saved (bookmarked) quotes</li>
     <li>App settings such as notification time, frequency, and content category</li>
     <li>Onboarding completion status</li>
+    <li>Today’s quote for the Home Screen widget (App Group — on-device only)</li>
   </ul>
-  <p style="margin-top:10px">All of the above stays on your device only and is never sent anywhere. Deleting the app removes this data.</p>
+  <p style="margin-top:10px">All of the above stays on your device only and is never sent anywhere. Deleting the app deletes this data.</p>
 
   <h2>Permissions</h2>
   <ul>
-    <li><strong style="color:#fff">Notifications</strong> — used only to deliver quote reminders at your chosen time.</li>
-    <li><strong style="color:#fff">Home screen widget</strong> — used only to display today's quote; widget data is updated locally on-device.</li>
+    <li><strong style="color:#fff">Notifications</strong> — used only to deliver quote reminders at your chosen time (local notifications, not remote push).</li>
+    <li><strong style="color:#fff">Home screen widget</strong> — used only to display today’s quote; widget data is updated locally on-device.</li>
   </ul>
+  <p style="margin-top:10px">We do not request camera, photos, location, microphone, or tracking (ATT) permissions.</p>
 
   <h2>Third-Party Services</h2>
-  <p>This app includes no analytics, advertising, or crash-reporting SDKs. There are no ads and no user tracking.</p>
+  <p>This app includes no analytics, advertising, or crash-reporting SDKs of any kind. There are no ads and no user tracking.</p>
 
   <h2>Contact</h2>
-  <p>For questions about this policy, reach out via Settings → Feedback in the app.</p>
+  <p>For questions about this policy, email
+    <a href="mailto:ypapex@gmail.com">ypapex@gmail.com</a>.
+  </p>
 
 </div>
 </body>
